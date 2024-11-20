@@ -1,0 +1,182 @@
+@font-face {
+    font-family:"principal" ;
+    src: url(../fontes/principal.ttf);
+}
+
+
+body {
+    background-image: url('../assets/background-image1.jpg'); 
+    background-position: center;
+    background-size: cover;  
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+    font-family:"principal";
+    color: rgb(0, 0, 0);
+    transition: background-image 0.5s ease;
+    position: relative;
+}
+
+/*Estilização dos botões para mudar a cor*/
+.mudar-cor {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+}
+.roxo {
+    background-color: rgba(122, 20, 218, 0.918);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.roxo:hover {
+    width: 60px;
+    height: 60px;
+}
+.verde {
+    background-color: rgba(38, 212, 22, 0.808);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.verde:hover {
+    width: 60px;
+    height: 60px;
+}
+.preto {
+    background-color: rgba(18, 19, 18, 0.808);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.preto:hover {
+    width: 60px;
+    height: 60px;
+}
+
+.barra-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    font-family: "principal";
+    font-size: 1.5rem;
+    margin-top: 1%;
+}
+
+.barra-container a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.sobre-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    width: 400px;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+
+.sobre-container h1 {
+    font-family: "principal";
+}
+
+.sobre-conteudo {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    background-color: rgba(27, 37, 31, 0.144);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+.sobre-conteudo2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    background-color: rgba(0, 0, 0, 0.137);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+
+/* Estilizando o footer*/
+.footer-container {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.747);
+    position: relative;
+    gap: 15px;
+    padding: 7px;
+   
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.instagram {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+}
+
+.instagram-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.instagram-container a {
+    text-decoration: none;
+    color: black;
+    margin-top: 1px ;
+}
+
+.github {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+}
+
+.github-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.github-container a {
+    text-decoration: none;
+    color: black;
+    margin-top: 1px ;
+}
+

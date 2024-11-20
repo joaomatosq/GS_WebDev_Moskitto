@@ -1,0 +1,249 @@
+@font-face {
+    font-family:"principal" ;
+    src: url(../fontes/principal.ttf);
+}
+
+@font-face {
+    font-family: "secundaria";
+    src: url();
+}
+
+body {
+    background-image: url('../assets/background-image1.jpg'); 
+    background-position: center;
+    background-size: cover;  
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+    font-family:"principal";
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.conteudo {
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#link-home {
+    font-family:"principal";
+    color: black;
+    font-size: 60px;
+    text-decoration: none;
+    position: relative;
+    bottom: -250px;  /* Inicia abaixo da tela */
+    transition: transform 3s ease;
+    cursor:pointer;
+}
+
+
+
+.move-up {
+    transform: translateY(-250px); /* Move o link para cima */
+    transition: transform 3s ease; /* Controla o tempo de movimento*/
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    font-family: "secundaria";
+    gap: 20px;
+    visibility: hidden;
+    margin-top: 500px;
+    transition: visibility 0s, opacity 2s ease, margin-top 3s ease; 
+    opacity: 0;
+}
+
+.menu a {
+    font-family: "principal";
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+.aparecer {
+    visibility: visible;
+    margin-top: 50px;
+    opacity: 100;
+}
+
+
+
+/* Criando estilos para a seção "Sobre" */
+.link-sobre {
+    color: black;
+}
+
+.link-sobre:hover {
+    color: green;
+    font-size: 2.2rem ;
+}
+
+.fade-out-sobre {
+    opacity: 0; /* Torna o link invisível */
+    transition: opacity 1s ease-out; /* Aplica uma transição suave */
+}
+
+
+
+/* Criando estilos para a seção "Quiz" */
+.link-quiz {
+    color: black;
+    opacity: 100;
+    transition: opacity 2s ease;
+}
+
+.link-quiz:hover {
+    color: green;
+    font-size: 2.2rem ;
+}
+
+.fade-out-quiz {
+    opacity: 0; /* Torna o link invisível */
+    transition: opacity 1s ease-out; /* Aplica uma transição suave */
+}
+
+
+
+/* Criando estilos para a seção "Contato" */
+.link-contato {
+    color: black;
+    opacity: 100;
+    transition: opacity 2s ease;
+}
+
+.link-contato:hover {
+    color: green;
+    font-size: 2.2rem ;
+}
+
+.fade-out-contato {
+    opacity: 0; /* Torna o link invisível */
+    transition: opacity 1s ease-out; /* Aplica uma transição suave */
+}
+
+/* Criando estilos para a seção "Login" */
+.link-login {
+    color: black;
+    opacity: 100;
+    transition: opacity 2s ease;
+}
+
+.link-login:hover {
+    color: green;
+    font-size: 2.2rem ;
+    
+}
+
+.fade-out-login {
+    opacity: 0; /* Torna o link invisível */
+    transition: opacity 1s ease-out; /* Aplica uma transição suave */
+}
+
+
+
+
+/* Criando estilos para a seção o subtitulo */
+.subtitulo {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    opacity: 100;
+    transform: transform 3s ease;
+}
+
+.subtitulo:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.fade-out-subtitulo {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+
+
+/* A animação para o efeito de flutuar */
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Sobe para 10px */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.fluido {
+    animation: flutuar 2s ease-in-out infinite;
+}
+
+
+
+
+/*Estilização dos botões para mudar a cor*/
+.mudar-cor {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+}
+.roxo {
+    background-color: rgba(122, 20, 218, 0.918);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.roxo:hover {
+    width: 60px;
+    height: 60px;
+}
+.verde {
+    background-color: rgba(38, 212, 22, 0.808);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.verde:hover {
+    width: 60px;
+    height: 60px;
+}
+.preto {
+    background-color: rgba(18, 19, 18, 0.808);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.preto:hover {
+    width: 60px;
+    height: 60px;
+}
+
+
+
+/*Estilzando o slideshow*/
+
+#slideshow {
+    margin-top: 20px;
+    position:absolute;
+    width: 230px;
+    height: 230px;
+    border-radius: 30%;
+}
+
+.slide-container {
+    margin-left: 100px;
+}
