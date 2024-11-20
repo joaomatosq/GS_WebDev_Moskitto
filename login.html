@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="src/css/login.css">
+</head>
+<body>
+
+    <div id="mudar-cor" class="mudar-cor">
+        <a id="roxo"  class="roxo"></a>
+        <a id="verde" class="verde"></a>
+        <a id="preto" class="preto"></a>
+    </div>
+
+    <header class="barra-container">
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="contato.html">Contato</a>
+        <a href="sobre.html">Sobre</a>
+    </header>
+
+    <div class="login-container">
+      
+        <h2>Login</h2>
+        <div id="error" class="error-message"></div>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button id="botao" type="submit">Entrar</button>
+        </form>
+
+
+        <footer class="footer-container">
+            <div>Moskitto.inc</div>
+            <div class="instagram-container">
+                <img class="instagram" src="./src/assets/instagram-logo.png">
+                <a href="https://www.instagram.com/moskitto.inc/">Instagram</a>
+            </div>
+            <div class="github-container">
+                <img class="github" src="./src/assets/github-logo.svg" alt="">
+                <a href="https://github.com/joaomatosq/GS_Web-dev_Moskitto">Github</a>
+            </div>
+        </footer>
+
+        
+    </div>
+   
+    <script src="./src/js/script-login.js"> </script>
+</body>
+</html>
